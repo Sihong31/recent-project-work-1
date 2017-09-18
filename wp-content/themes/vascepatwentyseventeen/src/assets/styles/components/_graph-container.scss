@@ -1,0 +1,117 @@
+.graph-container {
+  max-width: rem(800);
+  margin: 0 auto;
+  margin-bottom: rem(25);
+  @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(25);
+  }
+}
+
+.graph-container,
+.graph-modal {
+  img {
+    display: block;
+    width: 100%;
+  }
+  .img-container-full{
+    max-width: 100%;
+    margin-bottom: rem(15);
+    img{
+
+    }
+  }
+  .graph-header {
+    color: $color-dark-blue;
+    font-family: $dinotBold;
+    font-size: rem(14);
+    margin: 0 0 rem(40) 0;
+  }
+  .graph-copy {
+    color: $color-body-gray;
+    font-family: $dinot;
+    font-size: rem(10);
+    margin: rem(25) 0 0 0;
+  }
+  /**blue container with no left padding**/
+  .img-container-1 {
+    border: 1px solid $color-tab-border-blue;
+    background: $color-tab-background-blue;
+    border-radius: rem(12);
+    margin: 0 auto rem(10) auto;
+    padding: rem(35) 0 rem(35) 0;
+    width: 75%;
+    @media all and (min-width: $mobileMin) {
+      padding: rem(30) 0 rem(30) 0;
+      margin: 0 auto rem(10) auto;
+    }
+    img {
+      @media all and (min-width: $mobileMin) {
+        display: block;
+        // margin: 0 auto;
+        width: 90%;
+      }
+    }
+  }
+
+  /**blue container with all padding**/
+  .img-container-2 {
+    border: 1px solid $color-tab-border-blue;
+    background: $color-tab-background-blue;
+    border-radius: rem(12);
+    margin: 0 0 rem(25) 0;
+    padding: rem(20) rem(15);
+    @media all and (min-width: $mobileMin) {
+      padding: rem(30) rem(25);
+      margin: 0 0 rem(40) 0;
+    }
+  }
+
+  /**yellow container with no left padding**/
+  .img-container-3 {
+    border: 1px solid $color-data-tab-border-yellow;
+    background: $color-data-tab-background-yellow;
+    border-radius: rem(12);
+    margin: 0 auto rem(10) auto;
+    padding: rem(35) 0 rem(35) 0;
+    width: 75%;
+    @media all and (min-width: $mobileMin) {
+      padding: rem(10) 0 rem(10) 0;
+      margin: 0 auto rem(10) auto;
+    }
+    img {
+      @media all and (min-width: $mobileMin) {
+        display: block;
+        // margin: 0 auto;
+        width: 90%;
+      }
+    }
+  }
+
+  /**yellow container with all padding**/
+  .img-container-4 {
+    border: 1px solid $color-data-tab-border-yellow;
+    background: $color-data-tab-background-yellow;
+    border-radius: rem(12);
+    margin: 0 auto rem(25) auto;
+    padding: rem(20) rem(15);
+    width: 75%;
+    @media all and (min-width: $mobileMin) {
+      padding: rem(30) rem(25);
+      margin: 0 auto rem(45) auto;
+    }
+    img {
+      @media all and (min-width: $mobileMin) {
+        display: block;
+        // margin: 0 auto;
+        width: 90%;
+      }
+    }
+  }
+  .img-container-50 {
+    margin:0 auto;
+    text-align: center;
+    width: 50%;
+    margin-bottom:rem(40);
+
+  }
+}

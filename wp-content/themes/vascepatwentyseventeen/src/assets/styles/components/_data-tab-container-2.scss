@@ -1,0 +1,73 @@
+/***blue background**/
+.data-tab-container-2 {
+  border: 1px solid $color-tab-border-blue;
+  border-radius: rem(12);
+  background: $color-tab-background-blue;
+  padding: rem(45) rem(15);
+  max-width: 100%;
+  @media all and (min-width: $mobileMin) {
+    padding: rem(55) rem(65);
+
+  }
+  .data-tab-section {
+    overflow: hidden;
+    margin-bottom: rem(45);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(30);
+      &.last {
+        margin-bottom: 0;
+      }
+    }
+    .stacked-data-img-container {
+      margin-bottom: rem(23);
+      padding: 0;
+      text-align: center;
+      @media all and (min-width: $mobileMin) {
+        margin: 0;
+        max-width: rem(300);
+        text-align: left;
+        padding: 0;
+      }
+      img {
+        max-width: rem(150);
+        margin: 0 auto rem(30) auto;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    .data-img-container {
+      margin-bottom: rem(23);
+      padding: 0;
+      text-align: center;
+      @media all and (min-width: $mobileMin) {
+        margin: 0;
+        max-width: rem(190);
+        text-align: left;
+        padding: 0 rem(50) 0 0;
+      }
+      img {
+        max-width: rem(120);
+        margin: 0;
+        margin: 0 auto;
+        @media all and (min-width: $mobileMin) {
+          margin: 0;
+        }
+      }
+    }
+    .data-content {
+      text-align: center;
+      @media all and (min-width: $mobileMin) {
+        padding: rem(20) 0;
+        text-align: left;
+      }
+      p {
+        color: $color-dark-blue;
+        font-size: rem(18);
+        @media all and (min-width: $mobileMin) {
+          font-size: rem(24);
+        }
+      }
+    }
+  }
+}

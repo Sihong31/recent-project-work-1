@@ -1,0 +1,23 @@
+.anchor-page-hang {
+  position: absolute;
+  bottom: rem(-74);
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    bottom: rem(-62);
+  }
+  @media all and (min-width: $mediumMin) and (max-width: $largeMax){
+    bottom: rem(-55);
+  }
+  @media all and (min-width: $largeMin) {
+    bottom: rem(-65);
+  }
+}
+
+.anchor-hero-text {
+  max-width: rem(388);
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    max-width: rem(700);
+  }
+  @media all and (min-width: $mediumMin) {
+    max-width: rem(900);
+  }
+}

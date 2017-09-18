@@ -1,0 +1,145 @@
+/***FORM PAGE**/
+
+.register-access-container {
+  // padding: rem(65) rem(15) 0 rem(15);
+  // @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+  //   padding: rem(35) rem(90) 0 rem(165);
+  // }
+  // @media all and (min-width: $mediumMin) {
+  //   padding: rem(70) rem(90) 0 rem(335);
+  // }
+  h2,
+  h3,
+  p,
+  legend,
+  label {
+    color: $color-dark-blue;
+  }
+  h2 {
+    font-family: $dinProCondBlack;
+    font-size: rem(27.5);
+    margin: 0 0 rem(25) 0;
+    @media all and (min-width: $mobileMin) {
+      font-size: rem(40);
+      margin: 0 0 rem(50) 0;
+    }
+  }
+  h3 {
+    font-family: $dinProCondBlack;
+    font-size: rem(27.5);
+    margin: 0;
+    @media all and (min-width: $mobileMin) {
+      font-size: rem(36);
+    }
+  }
+  legend,
+  label {
+    font-size: rem(16);
+    @media all and (min-width: $mobileMin) {
+      font-size: rem(18);
+    }
+  }
+  legend {
+    border: none;
+    font-family: $dinProBold;
+    margin-bottom: rem(25);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(15);
+    }
+  }
+  label {
+    font-family: $dinPro;
+  }
+  button{
+    margin-bottom:rem(20);
+  }
+  ul {
+    padding-left: 0;
+    list-style: none;
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(30);
+    }
+    @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+      margin-bottom: rem(20);
+    }
+    li {
+      font-family: $dinot;
+      font-size: rem(18);
+      padding-left: rem(20);
+      position: relative;
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        font-size: rem(14);
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+        font-size: rem(16);
+      }
+      @media all and (min-width: $largeMin) {
+        font-size: rem(18);
+      }
+      &:before {
+        content: "•";
+        color: $color-column-yellow;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  .emphasis {
+    font-family: $dinPro;
+    font-size: rem(16);
+    margin-bottom: rem(45);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(35);
+    }
+  }
+  .register-card-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: rem(845);
+    .register-access-card {
+      margin-bottom: rem(20);
+      @media all and (min-width: $mobileMin) {
+        margin: 0 rem(25) rem(30) 0;
+      }
+      img {
+        width: 100%;
+        max-width: rem(379);
+      }
+    }
+    .register-access-card-content {
+      margin-bottom: rem(30);
+    }
+  }
+
+  .register-access-form {
+    margin-bottom: rem(20);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(20);
+    }
+    .form-group {
+      margin-bottom: rem(32);
+      @media all and (min-width: $mobileMin) {
+        margin-bottom: rem(35);
+      }
+      .form-check-label {
+        margin-bottom: rem(12);
+        @media all and (min-width: $mobileMin) {
+          margin-bottom: rem(20);
+        }
+        font-weight: normal;
+      }
+    }
+    .error {
+      display: block;
+      color: $color-error-red;
+      font-family: $dinProBold;
+      font-size: rem(12);
+      margin-top: rem(-10);
+    }
+  }
+}
+
+/***FORM CONFIRMATION**/
+
+
+/***FORM INCOMPLETE**/

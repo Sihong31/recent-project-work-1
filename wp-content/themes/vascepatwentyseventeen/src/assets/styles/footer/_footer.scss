@@ -1,0 +1,220 @@
+.site-footer {
+  .upper-footer-container {
+    background: $color-footer-light-blue;
+    color: $color-dark-blue;
+    font-size: rem(12);
+    height: rem(280);
+    padding: rem(18) rem(15);
+    position: relative;
+    @media all and (min-width: $mobileMin) {
+      height: rem(220);
+      padding: 0;
+    }
+    .content-row {
+      // max-width: rem(320);
+      // margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      width: 100%;
+      padding: 0 rem(15);
+      @media all and (min-width: $mobileMin) {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-wrap: wrap;
+        max-width: none;
+        margin: 0;
+      }
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        padding: 0 rem(20);
+      }
+      @media all and (min-width: $mediumMin) {
+        padding: 0 rem(80);
+      }
+      .copy {
+        font-family: $dinPro;
+        padding: 0;
+        margin-bottom: rem(20);
+        font-size: rem(12);
+        @media all and (min-width: $mobileMin) {
+          padding: rem(15) 0;
+          margin: 0;
+        }
+        @media all and (min-width: $largeMin) {
+          padding: rem(60) 0;
+        }
+      }
+      .logo-container {
+        .footer-logo-container-vascepa,
+        .footer-logo-container-amarin {
+          @media all and (min-width:$mobileMin) {
+            float: left;
+            height: 100%;
+          }
+        }
+        .footer-logo-container-vascepa {
+          float: left;
+          position: relative;
+          width: rem(84);
+          @media all and (min-width:$mobileMin) {
+            width: 66.67%;
+            margin: 0;
+            text-align: center;
+          }
+          &:after {
+            color: $color-dark-blue;
+            content: "\e90a";
+            font-family: 'icomoon'!important;
+            font-size: rem(60);
+            @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+              font-size: rem(100);
+            }
+            @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+              font-size: rem(100);
+            }
+            @media all and (min-width: $largeMin) {
+              font-size: rem(133);
+            }
+          }
+        }
+        .footer-logo-container-amarin {
+          float: right;
+          margin-top: rem(15);
+          position: relative;
+          width: rem(150);
+          @media all and (min-width:$mobileMin) {
+            margin: 0;
+            width: 33.33%;
+          }
+          #footer-logo-amarin {
+            width: 100%;
+            max-width: rem(100);
+            @media all and (min-width:$mobileMin) {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 0;
+            }
+            @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+              max-width: rem(200);
+            }
+            @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+              max-width: rem(200);
+            }
+            @media all and (min-width: $largeMin) {
+              max-width: rem(200);
+            }
+          }
+        }
+      }
+    }
+  }
+  .background-container {
+    background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/footer/footer-background.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: initial;
+    // height: rem(293);
+    position: relative;
+    @media all and (min-width: $mobileMin) {
+      background-size: cover;
+      height: rem(100);
+    }
+    .main-footer-container {
+      @media all and (min-width: $mobileMin) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        padding: 0 rem(20);
+      }
+      @media all and (min-width: $mediumMin) {
+        padding: 0 rem(80);
+      }
+      .menu-footer-menu-container {
+        @media all and (max-width: $mobileMax) {
+          background: $color-footer-blue;
+          // height: rem(230);
+        }
+        #menu-footer-menu {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: inherit;
+          @media all and (min-width: $mobileMin) {
+            margin: rem(12) 0 0 0;
+            max-width: rem(400);
+          }
+          @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+            margin: rem(9) 0 0 0;
+          }
+          .menu-item {
+            border-bottom: rem(2) solid $color-border-blue;
+            display: block;
+            width: 100%;
+            height: rem(38);
+            padding: rem(6) 0;
+            text-align: center;
+            @media all and (min-width: $mobileMin) {
+              border: none;
+              display: inline-block;
+              height: auto;
+              margin-right: rem(12);
+              padding: 0;
+              text-align: left;
+              width: auto;
+            }
+            a {
+              color: $color-white;
+              font-family: $dinProMedium;
+              font-size: rem(16);
+              font-weight: 700;
+              @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+                font-size: rem(11);
+                font-weight: normal;
+              }
+              @media all and (min-width: $mediumMin) {
+                font-size: rem(12);
+                font-weight: normal;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      .footer-copy-container {
+        color: $color-white;
+        font-family: $dinProMedium;
+        font-size: rem(12);
+        padding: rem(14) rem(20) 0 rem(20);
+        text-align: center;
+        width: 100%;
+        @media all and (min-width: $mobileMin) {
+          padding: 0;
+          text-align: right;
+          width: 50%;
+        }
+        @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+          font-size: rem(11);
+        }
+        .content {
+          max-width: rem(320);
+          margin: 0 auto;
+          @media all and (min-width: $mobileMin) {
+            margin: 0;
+            max-width: none;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

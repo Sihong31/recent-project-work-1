@@ -1,0 +1,18 @@
+#carousel-home .carousel-inner {
+  .item {
+    height: rem(485);
+    @media all and (min-width: $mobileMin) {
+      height: rem(465);
+    }
+  }
+}
+
+#carousel-home {
+  .left.carousel-control,
+  .right.carousel-control {
+    background: none;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}

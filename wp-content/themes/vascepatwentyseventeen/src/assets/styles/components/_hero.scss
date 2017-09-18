@@ -1,0 +1,194 @@
+.hero-container {
+  padding: 0;
+  height: rem(485);
+  float: none;
+  margin-top: rem(150);
+  @media all and (min-width: $mobileMin) {
+    height: rem(465);
+  }
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    margin-top: rem(103);
+  }
+  @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+    margin-top: rem(103);
+  }
+  @media all and (min-width: $largeMin) {
+    margin-top: rem(105);
+  }
+  .hero-background {
+    background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/heroes/hero-main-bg.png') no-repeat;
+    background-size: cover;
+    height: inherit;
+    position: relative;
+    @media all and (min-width: $mobileMin) {
+      background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/heroes/hero-main-bg.png') no-repeat;
+      background-size: cover;
+    }
+    .hero-parts {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      .hero-left,
+      .hero-line,
+      .hero-right {
+        position: absolute;
+      }
+      .hero-left {
+        bottom: rem(40.5);
+        @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+          bottom: rem(60);
+        }
+        @media all and (min-width: $mediumMin) {
+          bottom: rem(80);
+        }
+        img {
+          width: rem(250);
+          @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+            width: rem(380);
+          }
+          @media all and (min-width: $mediumMin) {
+            width: 100%;
+            max-width: rem(515);
+          }
+        }
+      }
+      .hero-line {
+        background: $color-hero-line-red;
+        bottom: rem(42);
+        left: rem(193);
+        height: rem(1);
+        width: 100%;
+        @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+          left: rem(293);
+          bottom: rem(64);
+          height: rem(2);
+        }
+        @media all and (min-width: $mediumMin) {
+          bottom: rem(84);
+          left: rem(399);
+          height: rem(2);
+        }
+      }
+      .hero-right {
+        bottom: 0;
+        right: 0;
+        img {
+          width: rem(85);
+          @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+            width: rem(125.5);
+          }
+          @media all and (min-width: $mediumMin) {
+            width: 100%;
+            max-width: rem(170);
+          }
+        }
+      }
+    }
+    .down-arrow {
+      position: absolute;
+      bottom: rem(25);
+      left: 50%;
+      transform: translateX(-50%);
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        bottom: rem(12);
+      }
+      &:after {
+        color: $color-white;
+        content: "\e901";
+        font-family: icomoon!important;
+        font-size: rem(25);
+      }
+    }
+    .content {
+      margin-top: rem(35);
+      padding: 0 rem(15);
+      max-width: rem(330);
+      @media all and (min-width: $mobileMin) {
+          margin-top: rem(100);
+          max-width: none;
+      }
+      @media all and (min-width: $mediumMin) {
+          margin-top: rem(75);
+            max-width: none;
+      }
+      @media all and (min-width: $largeMin) {
+        max-width: rem(596);
+      }
+      h1 {
+        color: $color-dark-blue;
+        margin: 0 0 rem(15) 0;
+        font-family: $dinProCondBlack;
+        font-size: rem(35);
+        line-height: rem(35);
+        @media all and (min-width: $mobileMin) {
+          margin: 0 0 rem(15) 0;
+        }
+        @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+          font-size: rem(40);
+          line-height: rem(40);
+        }
+        @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+          font-size: rem(40);
+          line-height: rem(40);
+        }
+        @media all and (min-width: $largeMin) {
+          font-size: rem(50);
+          line-height: rem(50);
+        }
+      }
+      p {
+        color: $color-black;
+        margin: 0 0 rem(25) 0;
+        font-family: $dinPro;
+        font-size: rem(16);
+        line-height: rem(16);
+        @media all and (min-width: $mobileMin) {
+          margin: 0 0 rem(15) 0;
+        }
+        @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+          font-size: rem(20);
+          line-height: rem(20);
+        }
+        @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+          font-size: rem(23);
+          line-height: rem(23);
+        }
+        @media all and (min-width: $largeMin) {
+          font-size: rem(29);
+          line-height: rem(29);
+        }
+      }
+      a {
+        border: none;
+        color: $color-white;
+        background: $color-dark-blue;
+        font-family: $dinProBlack;
+        font-size: rem(14.5);
+        height: rem(40);
+        letter-spacing: rem(3);
+        width: rem(160);
+        padding: rem(10) 0;
+        @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+          font-size: rem(14);
+          height: rem(40);
+          width: rem(180);
+          padding: rem(10) 0;
+        }
+        @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+          font-size: rem(15);
+          height: rem(40);
+          width: rem(180);
+          padding: rem(10) 0;
+        }
+        @media all and (min-width: $largeMin) {
+          font-size: rem(16);
+          height: rem(50);
+          width: rem(210);
+          padding: rem(14) 0;
+        }
+      }
+    }
+  }
+}

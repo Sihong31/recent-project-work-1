@@ -1,0 +1,88 @@
+/**UTILITY**/
+$browser-context: 16;
+
+/**COLORS**/
+$color-black: #303030;
+$color-light-blue: #f9f9f9;
+$color-input-blue: #acc9dd;
+$color-tab-border-blue: #cadce7;
+$color-tab-background-blue: #ecf6fc;
+$color-downloads-sky-blue: #ecf6fd;
+$color-dark-blue: #15345e;
+$color-sky-blue: #a6cfeb;
+$color-column-sky-blue: #a4cfea;
+$color-border-blue: #29436e;
+$color-footer-light-blue: #e8e8e8;
+$color-footer-blue: #1d365f;
+$color-tab-gray: #a7a9ac;
+$color-body-gray: #5f5f5f;
+$color-flyout-gray: #f8f8f8;
+$color-ushcp-gray: #f6f5ef;
+$color-border-gray: #e4e2d9;
+$color-table-header-gray: #4d4d4f;
+$color-table-border-gray: #8a96ab;
+$color-table-background-gray: #ececed;
+$color-gray: #909191;
+$color-white: #ffffff;
+$color-nav-yellow: #eed931;
+$color-column-yellow: #f3da2a;
+$color-data-tab-border-yellow: #f1e7b5;
+$color-data-tab-background-yellow: #fefbeb;
+$color-active-menu-yellow: #fcf7d2;
+$color-active-menu-border-yellow: #ecd843;
+$color-peach: #fdfbe4;
+$color-error-red: #e2201a;
+$color-hero-line-red: #b9373a;
+$color-disclosure-purple: #2d2b63;
+$color-disclosure-purple-2: #ececed;
+
+
+/**FONTS**/
+// $dinPro: 'DINPro-Regular';
+// $dinProMedium: 'DINPro-Medium';
+// $dinProBlack: 'DINPro-Black';
+// $dinProCondBlack: 'DINPro-Cond-Black';
+// $dinProBold: 'DINPro-Bold';
+// $dinot: 'Dinot';
+// $dinotBlack: 'Dinot-Black';
+// $dinotBlackItalic: 'Dinot-Black-Italic';
+// $dinotMedium: 'Dinot-Medium';
+// $dinotBold: 'Dinot-Bold';
+
+$dinPro: 'FFDINStdRegular';
+$dinProMedium: 'FFDINStdMedium';
+$dinProBlack: 'FFDINStdBlack';
+$dinProCondBlack: 'FFDINStdCondensedBlack';
+$dinProBold: 'FFDINStdBold';
+
+$dinot: $dinPro;
+$dinotBlack: $dinProBlack;
+$dinotBlackItalic: 'FFDINStdBlackItalic';
+$dinotMedium: $dinProMedium;
+$dinotBold: $dinProBold;
+/***
+dinPro => FF DIN Std Regular by FontFont
+dinProMedium => FF DIN Std Medium by FontFont
+dinProBold => FF DIN Std Bold by FontFont
+dinProBlack => FF DIN Std Black by FontFont
+dinProCondBlack => FF DIN Std Condensed Black by FontFont
+
+dinotBlackItalic => FF DIN Std Black Italic by FontFont
+
+/***
+
+/**BREAKPOINTS**/
+$mobileMax: 767px;
+$mobileMin: 768px;
+$mediumMax: 991px;
+$mediumMin: 992px;
+$largeMax: 1206px;
+$largeMin: 1207px;
+// $largeMax: 1199px;
+// $largeMin: 1200px;
+
+
+/**FUNCTIONS**/
+@function rem($pixels, $context: $browser-context) {
+  @return ($pixels/$context)+rem;
+}

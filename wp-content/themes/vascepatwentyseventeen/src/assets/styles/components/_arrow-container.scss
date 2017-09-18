@@ -1,0 +1,37 @@
+.arrow-container {
+  color: $color-dark-blue;
+  font-family: $dinPro;
+  font-size: rem(15);
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: rem(70);
+  margin: 0 auto rem(40) auto;
+  padding: 0 0 rem(52) 0;
+  @media all and (min-width: $mobileMin) {
+    max-width: rem(500);
+    font-size: rem(24);
+    padding: 0 0 rem(44) 0;
+  }
+ /*  &:before {
+    background: $color-dark-blue;
+    content: "";
+    display: block;
+    height: rem(35);
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+  &:after {
+    content: "\e906";
+    font-family: icomoon!important;
+    font-size: rem(20);
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-80%);
+  }
+}

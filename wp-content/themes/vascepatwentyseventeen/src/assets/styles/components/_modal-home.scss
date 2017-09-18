@@ -1,0 +1,109 @@
+#modal-home {
+  padding: 0!important;
+  .modal-dialog {
+    margin-top: rem(120);
+  }
+  .modal-content {
+    margin: 0 auto;
+    max-width: rem(560);
+    padding: rem(50) rem(15);
+    @media all and (min-width: $mobileMin) {
+      padding: rem(50) rem(65);
+    }
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+      border: none;
+      padding: 0;
+    }
+    .modal-header {
+      text-align: center;
+      &:after {
+        background: $color-column-yellow;
+        content: "";
+        display: block;
+        height: rem(4);
+        margin: rem(30) auto;
+        width: rem(50);
+      }
+      .logo-container {
+        &:after {
+          color: $color-dark-blue;
+          content: "\e90a";
+          font-family: 'icomoon'!important;
+          font-size: rem(80);
+          display: inline-block;
+          max-height: rem(135);
+          @media all and (min-width: $mobileMin) {
+            font-size: rem(135);
+          }
+        }
+      }
+      img {
+        max-width: rem(100);
+        @media all and (min-width: $mobileMin) {
+          max-width: rem(120);
+        }
+      }
+    }
+    .modal-body {
+      text-align: center;
+      h2 {
+        color: $color-dark-blue;
+        font-family: $dinProCondBlack;
+        font-size: rem(30);
+        margin-bottom: rem(20);
+        @media all and (min-width: $mobileMin) {
+          font-size: rem(42);
+        }
+        span {
+          color: $color-column-yellow;
+        }
+      }
+      p {
+        font-family: $dinPro;
+        font-size: rem(16);
+        margin-bottom: 0;
+        @media all and (min-width: $mobileMin) {
+          font-size: rem(18);
+        }
+      }
+    }
+    .modal-footer {
+      margin-top: rem(40);
+      text-align: center;
+      /***buttons***/
+      #modal-home-yes,
+      #modal-home-no {
+        border: rem(3) solid $color-dark-blue;
+        border-radius: rem(3);
+        font-family: $dinProBlack;
+        font-size: rem(14);
+        width: 100%;
+        max-width: rem(120);
+        height: rem(40);
+        letter-spacing: rem(3);
+        padding: rem(5.5) 0;
+        text-transform: uppercase;
+        @media all and (min-width: $mobileMin) {
+          font-size: rem(16);
+          height: rem(50);
+          max-width: rem(190);
+          padding: rem(10.5) 0;
+          width: rem(190);
+        }
+      }
+      #modal-home-yes {
+        background: $color-dark-blue;
+        color: $color-white;
+        @media all and (min-width: $mobileMin) {
+          margin-right: rem(30);
+        }
+      }
+      #modal-home-no {
+        background: $color-white;
+        color: $color-dark-blue;
+      }
+    }
+  }
+}

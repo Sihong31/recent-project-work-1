@@ -1,0 +1,105 @@
+.hero-2,
+.hero-3 {
+  height: rem(200);
+  margin: rem(150) 0 0 0;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  @media all and (min-width: $mobileMin) {
+    height: rem(200);
+    text-align: left;
+  }
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax){
+    margin: rem(133) 0 rem(50) 0;
+    height: rem(175);
+  }
+  @media all and (min-width: $mediumMin) and (max-width: $largeMax){
+    margin: rem(133) 0 rem(50) 0;
+    height: rem(175);
+  }
+  @media all and (min-width: $largeMin) {
+    margin: rem(140) 0 rem(50) 0;
+  }
+  .footnote {
+    margin-left: 0;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    h1 {
+      font-family: $dinProCondBlack;
+      font-size: rem(40);
+      margin: 0;
+      text-transform: uppercase;
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax){
+        font-size: rem(45);
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax){
+        font-size: rem(55);
+      }
+      @media all and (min-width: $largeMin) {
+        font-size: rem(55);
+      }
+    }
+    p {
+      font-family: $dinot;
+      font-size: rem(16);
+      line-height: rem(16);
+      margin: rem(10) 0 rem(5) 0;
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax){
+        font-size: rem(20);
+        line-height: rem(20);
+        margin: 0  0 rem(5) 0;
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax){
+        font-size: rem(23);
+        line-height: rem(23);
+        margin: 0  0 rem(5) 0;
+      }
+      @media all and (min-width: $largeMin) {
+        font-size: rem(29);
+        line-height: rem(29);
+        margin: 0  0 rem(5) 0;
+      }
+    }
+  }
+}
+
+.hero-2, .hero-3 {
+  background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/heroes/hero-2.jpg');
+  background-size: cover;
+  h1,
+  p {
+    color: $color-dark-blue;
+  }
+  .content {
+    text-align: left;
+    padding: 0 rem(15);
+    @media all and (min-width: $mobileMin) and (max-width: $largeMax) {
+      margin: 0;
+      width: 100%;
+      max-width: rem(700);
+      padding: 0;
+    }
+    @media all and (min-width: $largeMin) {
+      max-width: rem(900);
+      padding: 0;
+    }
+  }
+}
+
+.hero-3 {
+  background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/heroes/hero-3.jpg');
+  margin-bottom: 0;
+  h1,
+  p {
+    color: $color-white;
+  }
+
+}

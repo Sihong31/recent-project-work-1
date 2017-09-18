@@ -1,0 +1,32 @@
+.sandwich {
+  overflow: hidden;
+  position: relative;
+  @media all and (min-width: $mobileMin) {
+    display: flex;
+    margin-bottom: rem(40);
+  }
+  .sandwich-bread {
+    margin-bottom: rem(25);
+    @media all and (min-width: $mobileMin) {
+      margin: 0;
+    }
+    img {
+      margin: 0;
+    }
+  }
+
+  .sandwich-meat {
+    height: inherit;
+    p {
+      font-size: rem(18);
+      margin-bottom: rem(25);
+      @media all and (min-width: $mobileMin) {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

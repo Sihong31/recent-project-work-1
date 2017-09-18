@@ -1,0 +1,51 @@
+.site-map-container {
+  @media all and (min-width: $mobileMin) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: rem(50);
+  }
+  .list-container {
+    width: 100%;
+    margin: 0 auto rem(45) auto;
+    max-width: rem(290);
+    @media all and (min-width: $mobileMin) {
+      margin: 0 0 rem(40) 0;
+      width: 50%;
+      max-width: none;
+    }
+    a,
+    h2 {
+      color: $color-dark-blue;
+      font-family: $dinProCondBlack;
+      text-transform: none;
+    }
+    h2 {
+      margin-bottom: rem(10);
+      @media all and (min-width: $mobileMin) {
+        margin-bottom: rem(10);
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+    ul {
+      margin-bottom: 0;
+      li {
+        padding-left: rem(15);
+        @media all and (min-width: $mobileMin) {
+          margin-bottom: rem(5);
+          padding-left: rem(20);
+        }
+        &:before {
+          content: "";
+        }
+        a {
+          font-family: $dinotMedium;
+          font-size: rem(18);
+          text-decoration: underline;
+          text-transform: none;
+        }
+      }
+    }
+  }
+}

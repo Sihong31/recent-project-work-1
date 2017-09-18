@@ -1,0 +1,215 @@
+/**First row of global navigation**/
+.secondary-nav-copy,
+.secondary-nav {
+  display: inline-block;
+}
+.upper-nav-row{
+  background:$color-dark-blue;
+  color:#fff;
+  height:rem(20);
+  font-size: rem(10);
+  position: relative;
+  z-index: 9999;
+  @media all and (min-width: $mobileMin) {
+      height:rem(30);
+      font-size: rem(11);
+  }
+  .divider-for-space{
+    padding:0 rem(10);
+  }
+  .upper-text{
+    text-align: right;
+    padding:rem(3) 0;
+    height: 0;
+    @media all and (min-width: $mobileMin) {
+      height: inherit;
+      padding:rem(7) 0;
+    }
+    @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+      font-size: rem(10);
+    }
+  }
+  a{
+    font-weight: bold;
+    color: #fff !important;
+    text-decoration: underline;
+  }
+  .col-xs-11{
+    padding:0;
+  }
+}
+.nav-link-container-upper{
+  background:$color-dark-blue;
+  color:#fff;
+  height:20px;
+  font-size: rem(11);
+  .col-xs-11{
+    padding:0;
+  }
+  .upper-text-container{
+    @media all and (min-width: $mobileMin) {
+      max-width: 100%;
+    }
+    @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    }
+    @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+    }
+    @media all and (min-width: $largeMin) {
+    }
+  }
+  .upper-text{
+    text-align: right;
+    padding:2px 0;
+  }
+
+  a{
+    font-weight: bold;
+    color: #fff !important;
+    text-decoration: underline;
+  }
+}
+.secondary-nav-container {
+  height: rem(88);
+  max-width: rem(1040);
+  padding: 0;
+  @media all and (min-width: $mobileMin) {
+    //background: $color-light-blue; /* For browsers that do not support gradients */
+    //background: -webkit-linear-gradient(left, $color-white , $color-light-blue); /* For Safari 5.1 to 6.0 */
+    //background: -o-linear-gradient(right, $color-white, $color-light-blue); /* For Opera 11.1 to 12.0 */
+    //background: -moz-linear-gradient(right, $color-white, $color-light-blue); /* For Firefox 3.6 to 15 */
+    //background: linear-gradient(to right, $color-white, $color-light-blue);
+    max-width: 100%;
+    text-align: right;
+  }
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    height: rem(26);
+    padding: rem(7) 0;
+  }
+  @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+    height: rem(26);
+    padding: rem(7) 0;
+  }
+  @media all and (min-width: $largeMin) {
+    height: rem(26);
+    padding: rem(8) 0 0 0;
+  }
+  .secondary-nav-copy {
+    background: $color-ushcp-gray;
+    color: $color-dark-blue;
+    font-size: rem(11);
+    font-family: $dinotBold;
+    font-weight: 500;
+    height: rem(20);
+    margin-right: rem(28);
+    padding: rem(2) 0;
+    text-align: right;
+    width: 100%;
+    @media all and (min-width: $mobileMin) {
+      background: transparent;
+      color: $color-gray;
+      font-weight: 700;
+      height: auto;
+      padding: 0;
+      text-align: left;
+      width: auto;
+    }
+    @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+      font-size: rem(9);
+      margin: 0 rem(4) 0 rem(70);
+    }
+    @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+        margin: 0 rem(10) 0 0;
+        font-size: rem(10);
+    }
+    @media all and (min-width: $largeMin) {
+      font-size: rem(12);
+
+    }
+  }
+}
+
+.secondary-nav {
+  background: $color-nav-yellow;
+  height: rem(64);
+  padding: rem(7.5) rem(15);
+  width: 100%;
+  @media all and (min-width: $mobileMin) {
+    background: transparent;
+    padding: 0;
+    width: auto;
+  }
+  #menu-secondary-menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    // margin: 0 auto;
+    // max-width: rem(290);
+    padding: 0;
+    margin-top: rem(18);
+    @media all and (min-width: $mobileMin) {
+      display: block;
+      margin-top: 0;
+      // margin: 0;
+      // max-width: none;
+    }
+    >.menu-item {
+      width: 50%;
+      line-height: rem(12);
+      margin-bottom: rem(2);
+      @media all and (min-width: $mobileMin) {
+        display: inline-block;
+        line-height: inherit;
+        width: auto;
+      }
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        margin: 0 rem(4) 0 0;
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+        margin: 0 rem(10) 0 0;
+      }
+      @media all and (min-width: $largeMin) {
+        margin: 0 rem(17) 0 0;
+      }
+      &:nth-child(2n+2) {
+        text-align: right;
+        @media all and (min-width: $mobileMin) {
+          text-align: left;
+        }
+      }
+      &:last-child {
+        display: none;
+        @media all and (min-width: $mobileMin) {
+          display: initial;
+        }
+        // font-weight: bold;
+        margin-right: 0;
+        a {
+          font-family: $dinotBold;
+        }
+      }
+      a {
+        color: $color-dark-blue;
+        font-family: $dinot;
+        font-size: rem(11);
+        text-decoration: underline;
+        @media all and (min-width: $mobileMin) {
+          text-decoration: none;
+        }
+        @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+          font-size: rem(9);
+        }
+        @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+          font-size: rem(10);
+        }
+        @media all and (min-width: $largeMin) {
+          font-size: rem(12);
+        }
+        &:hover {
+          @media all and (min-width: $mobileMin) {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

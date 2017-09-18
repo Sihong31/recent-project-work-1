@@ -1,0 +1,120 @@
+.graph-slider {
+  overflow: hidden;
+  padding: rem(65) rem(15) 0 rem(15);
+  position: relative;
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    padding: 0 rem(40);
+  }
+  @media all and (min-width: $mediumMin) {
+    padding: 0 rem(170) 0 rem(115);
+  }
+  .graph-slider-links {
+    background: $color-peach;
+    margin-bottom: rem(45);
+    padding: rem(15);
+    position: relative;
+    @media all and (min-width: $mobileMin) {
+      background: $color-white;
+      padding: 0;
+      margin: 0;
+      // position: relative;
+    }
+    .graph-slider-links,
+    &.trigger-top-position,
+    &.trigger-bottom-position {
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        max-width: rem(224);
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+        max-width: rem(231);
+      }
+      @media all and (min-width: $largeMin) {
+        max-width: rem(227);
+      }
+    }
+    &.trigger-top-position {
+      position: fixed;
+      top: rem(180);
+    }
+    &.trigger-bottom-position {
+      position: absolute;
+      bottom: rem(150);
+      left: rem(115);
+      top: initial;
+    }
+    &:after {
+      @media all and (min-width: $mobileMin) {
+        background: $color-dark-blue;
+        content: "";
+        display: block;
+        width: rem(2);
+        height: rem(250);
+        position: absolute;
+        top: 0;
+      }
+      @media all and (min-width: $mobileMin) {
+        left: rem(200);
+      }
+    }
+    h3 {
+      color: $color-dark-blue;
+      font-family: $dinot;
+      font-size: rem(20);
+      font-weight: 300;
+      margin: 0 0 rem(25) 0;
+      @media all and (min-width: $mobileMin) {
+        font-size: rem(20);
+      }
+    }
+    ul {
+      list-style: none;
+      padding-left: rem(15);
+      @media all and (min-width: $mobileMin) {
+        max-width: rem(140);
+        padding-left: rem(20);
+      }
+      li {
+        color: $color-dark-blue;
+        cursor: pointer;
+        font-family: $dinot;
+        font-size: rem(15);
+        margin-bottom: rem(10);
+        position: relative;
+        @media all and (min-width: $mobileMin) {
+          font-size: rem(18);
+        }
+        &.active {
+          font-family: $dinotBold;
+        }
+        &:hover {
+          font-family: $dinotBold;
+          // &:after {
+          //   background: $color-dark-blue;
+          //   content: "";
+          //   display: block;
+          //   height: rem(25);
+          //   width: rem(2);
+          //   position: absolute;
+          //   top: 0;
+          //   left: 100%;
+          // }
+        }
+        a {
+          color: $color-dark-blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .graph-containers {
+    .graph-container {
+      margin-bottom: rem(50);
+      @media all and (min-width: $mobileMin) {
+        margin-bottom: rem(100);
+      }
+    }
+    p {
+      // color: $color-black;
+    }
+  }
+}

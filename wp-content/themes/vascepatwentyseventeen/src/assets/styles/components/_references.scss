@@ -1,0 +1,50 @@
+.reference-container {
+  // margin: rem(50) auto rem(40) auto;
+  background: $color-flyout-gray;
+  border-bottom: 1px solid $color-sky-blue;
+  max-width: 100%;
+  padding: rem(40) rem(15);
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    padding: rem(40) rem(45);
+  }
+  @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+    padding: rem(40) rem(80);
+  }
+  @media all and (min-width: $largeMin) {
+    padding: rem(40) rem(140);
+  }
+  [class*="col-"] {
+    padding: 0;
+  }
+  // @media all and (min-width: $mobileMin) {
+  //   margin: rem(50) auto rem(20) auto;
+  // }
+  h5 {
+    font-family: $dinotBold;
+  }
+  ol li {
+    font-family: $dinot;
+  }
+  h5,
+  ol li {
+    color: $color-dark-blue;
+    font-family: $dinotBold;
+    font-size: rem(12);
+  }
+  ol {
+    padding-left: rem(23);
+
+  }
+  ol > li > span{
+    font-family: $dinot;
+  }
+  p {
+    margin-bottom: 0;
+    color: $color-body-gray;
+    font-family: $dinot;
+    font-size: rem(12);
+  }
+  strong {
+    color: $color-dark-blue;
+  }
+}

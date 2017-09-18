@@ -1,0 +1,101 @@
+.safety-overview-table {
+  margin-bottom: rem(25);
+  width: 100%;
+  @media all and (min-width: $mobileMin) {
+    margin-bottom: rem(45);
+  }
+  tr {
+    &:nth-child(2n+3) {
+      background: $color-table-background-gray;
+    }
+
+    td,
+    th {
+      border-right: rem(2) solid $color-dark-blue;
+      height: rem(40);
+      padding: rem(5) 0;
+      text-align: center;
+      @media all and (min-width: $mobileMin) {
+        padding: rem(10) 0;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+    th {
+      background: $color-tab-background-blue;
+      color: $color-dark-blue;
+      font-family: $dinotBold;
+      font-size: rem(13);
+      @media all and (min-width: $mobileMin) {
+        font-size: rem(18);
+      }
+    }
+    td {
+      color: $color-body-gray;
+      font-size: rem(12);
+      @media all and (min-width: $mobileMin) {
+        font-size: rem(16);
+      }
+    }
+    .first-cell {
+      color: $color-dark-blue;
+      font-family: $dinotBold;
+      font-size: rem(13);
+      padding-left: rem(20);
+      @media all and (min-width: $mobileMin) {
+        font-size: rem(24);
+        padding-left: rem(30);
+      }
+    }
+    #icon-arthalgia,
+    #icon-fishy-burps,
+    #icon-nausea,
+    #icon-diarrhea {
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: rem(20);
+        height: rem(20);
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        @media all and (min-width: $mobileMin) {
+          width: rem(40);
+          height: rem(40);
+          left: auto;
+        }
+      }
+    }
+    #icon-arthalgia {
+      position: relative;
+      &:after {
+        background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/safety-overview/icon-arthalgia.svg') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    #icon-fishy-burps {
+      position: relative;
+      &:after {
+        background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/safety-overview/icon-fishy-burps.svg') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    #icon-nausea {
+      position: relative;
+      &:after {
+        background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/safety-overview/icon-nausea.svg') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    #icon-diarrhea {
+      position: relative;
+      &:after {
+        background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/safety-overview/icon-diarrhea.svg') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

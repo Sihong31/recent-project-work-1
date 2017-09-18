@@ -1,0 +1,166 @@
+.left-container,
+.contact-container {
+  height: auto;
+  margin-bottom: rem(45);
+  @media all and (min-width: $mobileMin) {
+    height: rem(950);
+    margin-bottom: rem(20);
+  }
+  h1,
+  h2,
+  p,
+  a,
+  label {
+    color: $color-dark-blue;
+  }
+  h1 {
+    font-family: $dinProCondBlack;
+    font-size: rem(32.5);
+    margin: 0 0 rem(25) 0;
+    text-transform: uppecase;
+    @media all and (min-width: $mobileMin) and (max-width: $largeMax) {
+      font-size: rem(36);
+    }
+    @media all and (min-width: $largeMin) {
+      font-size: rem(45);
+    }
+  }
+  h2 {
+    font-family: $dinProCondBlack;
+    font-size: rem(27.5);
+    margin: 0;
+    text-transform: uppercase;
+    @media all and (min-width: $mobileMin) {
+      margin: 0 0 rem(15) 0;
+    }
+    @media all and (min-width: $mobileMin) and (max-width: $largeMax) {
+      font-size: rem(24);
+    }
+    @media all and (min-width: $largeMin) {
+      font-size: rem(28);
+    }
+  }
+  p {
+    font-family: $dinot;
+  }
+  label {
+    font-family: $dinProBold;
+  }
+  p,
+  a,
+  label {
+    font-size: rem(18);
+    @media all and (min-width: $mobileMin) and (max-width: $largeMax) {
+      font-size: rem(16);
+    }
+    @media all and (min-width: $largeMin) {
+      font-size: rem(17);
+    }
+  }
+  .emphasis {
+    font-size: rem(16);
+    margin-bottom: rem(20);
+  }
+}
+
+.left-container {
+  padding: rem(65) rem(15) 0 rem(15);
+  @media all and (min-width: $mobileMin) and (max-width: $largeMax) {
+      padding: rem(65) rem(65) 0 rem(85);
+  }
+  @media all and (min-width: $largeMin) {
+    padding: rem(70) rem(135) 0 rem(170);
+  }
+  p {
+    margin-bottom: rem(25);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(30);
+    }
+  }
+  .confirmation-container {
+    p {
+      color: $color-black;
+    }
+    img {
+      display: block;
+      margin: rem(50) auto;
+      @media all and (min-width: $mobileMin) {
+        margin: rem(40) 0 rem(50) 0;
+      }
+    }
+  }
+
+  .incomplete-container {
+    p {
+      color: $color-black;
+    }
+    ol {
+      padding-left: rem(20);
+    }
+  }
+  .interest-container {
+    margin-bottom: rem(40);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(60);
+    }
+  }
+  .form-container {
+    margin-bottom: rem(40);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(50);
+    }
+    form {
+      label {
+        font-size: rem(18);
+        margin-bottom: rem(5);
+      }
+      input#downloads-email {
+        border: 1px solid $color-input-blue;
+        max-width: rem(500);
+      }
+    }
+  }
+  .download-links {
+    .download-columns {
+      display: flex;
+      .col-1,
+      .col-2 {
+          width: 100%;
+        @media all and (min-width: $mobileMin) {
+          max-width: rem(160);
+          width: 50%;
+        }
+        a {
+          display: block;
+          font-family: $dinotMedium;
+          margin-bottom: rem(20);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.contact-container {
+  background: $color-downloads-sky-blue;
+  padding: rem(65) rem(15);
+  margin-bottom: rem(10);
+  @media all and (min-width: $mobileMin) {
+    margin-bottom: 0;
+  }
+  @media all and (min-width: $mobileMin) and (max-width: $largeMax) {
+    padding: rem(65) rem(60) 0 rem(40);
+  }
+  @media all and (min-width: $largeMin) {
+    padding: rem(70) rem(60) 0 rem(80);
+  }
+  .contact-address {
+    margin-bottom: rem(20);
+    p {
+      margin: 0;
+    }
+  }
+  .contact-phone {
+
+  }
+}

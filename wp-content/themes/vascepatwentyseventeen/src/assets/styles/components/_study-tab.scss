@@ -1,0 +1,54 @@
+.study-tab-container {
+  .tab-headline-1,
+  .tab-headline-2 {
+    border-top-right-radius: rem(12);
+    border-top-left-radius: rem(12);
+    color: $color-white;
+    font-family: $dinProMedium;
+    margin-bottom: rem(20);
+    padding: rem(20) 0 rem(20) rem(25);
+    &.full-border-radius {
+      border-radius: rem(12);
+    }
+    &.m-0 {
+      margin: 0;
+    }
+  }
+  .tab-headline-1 {
+    background: $color-dark-blue;
+  }
+  .tab-headline-2 {
+    background: $color-tab-gray;
+  }
+  .tab-body-1,
+  .tab-body-2 {
+    border-bottom-right-radius: rem(12);
+    border-bottom-left-radius: rem(12);
+    padding: rem(30) rem(25);
+    p {
+      font-weight: bold;
+    }
+    h3 {
+      margin: 0 0 rem(15) 0;
+    }
+    ul {
+      li {
+        color: $color-body-gray;
+        font-family: dinot;
+        font-size: rem(18);
+        font-weight: normal;
+      }
+    }
+  }
+  .tab-body-1 {
+   background: $color-tab-background-blue;
+   border: 1px solid $color-tab-border-blue;
+   color: $color-dark-blue;
+   font-weight: bold;
+  }
+  .tab-body-2 {
+    border: 1px solid $color-tab-gray;
+    color: $color-body-gray;
+    font-weight: bold;
+  }
+}

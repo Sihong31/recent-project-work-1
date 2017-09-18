@@ -1,0 +1,42 @@
+/***blue background, white font***/
+.button-link-1,
+.button-link-2,
+.button-link-3 {
+  background: $color-dark-blue;
+  border-radius: rem(3);
+  border: none;
+  color: $color-white!important;
+  display: block;
+  font-family: $dinProBlack;
+  font-size: rem(16);
+  height: rem(40);
+  letter-spacing: rem(3);
+  width: 100%;
+  max-width: rem(290);
+  padding: rem(9.5) 0;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover,
+  &:focus {
+    color: $color-white;
+    text-decoration: none;
+  }
+  @media screen and (min-width: $mobileMin) {
+    padding: rem(13) 0;
+    height: rem(50);
+    width: rem(210);
+    max-width: none;
+  }
+}
+
+.button-link-2 {
+  @media screen and (min-width: $mobileMin) {
+    width: rem(300);
+  }
+}
+
+.button-link-3 {
+  @media screen and (min-width: $mobileMin) {
+    width: rem(350);
+  }
+}

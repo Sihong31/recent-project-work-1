@@ -1,0 +1,128 @@
+.standard-disclosure-container {
+  margin: 0 auto rem(45) auto;
+  max-width: rem(800);
+  padding: 0;
+  // @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+  //   padding: 0 rem(45);
+  // }
+  // @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+  //   padding: 0 rem(80);
+  // }
+  // @media all and (min-width: $largeMin) {
+  //   padding: 0 rem(140);
+  // }
+  h4,
+  p {
+    margin: 0 0 rem(20) 0;
+    @media all and (min-width: $mobileMin) {
+      margin: 0 0 rem(30) 0;
+    }
+  }
+  h4 {
+    color: $color-dark-blue;
+    font-family: $dinotBold;
+    font-size: rem(18);
+    text-transform: normal;
+    &.tt-uppercase {
+      text-transform: uppercase;
+    }
+  }
+  p,
+  ul li {
+    color: $color-body-gray;
+    font-family: $dinPro;
+  }
+  a {
+    color: $color-dark-blue;
+    font-family: $dinPro;
+  }
+  .boxed-content {
+    border: 1px solid $color-black;
+    padding: rem(30);
+  }
+  .footnote {
+    margin-bottom: rem(20);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(30);
+    }
+  }
+  .table-headline {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .disclosure-table {
+    width: 100%;
+    tr:nth-child(2n+4) {
+      td {
+        background: $color-disclosure-purple-2;
+      }
+    }
+    tr:nth-child(n+3) {
+      td {
+        border-right: 1px dotted $color-body-gray;
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+    th {
+      background: $color-dark-blue;
+      color: $color-white;
+      vertical-align: top;
+    }
+    th {
+      padding: rem(15) rem(10) 0 rem(10);
+      @media all and (min-width: $mobileMin) {
+        padding: rem(15) rem(10) 0 rem(10);
+      }
+    }
+    td {
+      height: rem(30);
+      padding: rem(8) rem(15);
+      @media all and (min-width: $mobileMin) {
+        padding: 0 0;
+      }
+      @media all and (min-width: $largeMin) {
+        padding: 0 rem(10);
+      }
+    }
+    th,
+    .first-cell {
+      font-family: $dinotBold;
+      text-align: center;
+    }
+    th {
+      font-size: rem(12);
+    }
+    .first-cell {
+      color: $color-body-gray;
+      font-size: rem(12);
+      text-align: left;
+    }
+    th.first-cell {
+      color: $color-white;
+      padding-bottom: rem(20);
+      vertical-align: middle;
+    }
+    td.sub-headline {
+      background: $color-dark-blue;
+      color: $color-white;
+      font-size: rem(10);
+      font-family: $dinot;
+      width: rem(70);
+    }
+    td {
+      color: $color-body-gray;
+      font-family: $dinot;
+      font-size: rem(10);
+      text-align: center;
+    }
+
+  }
+  [class*="col-"] {
+    padding: 0;
+  }
+  .footnote {
+    margin-bottom: rem(15);
+  }
+}

@@ -1,0 +1,48 @@
+.graph-container .data-table-1 {
+  margin: 0 0 rem(20) 0;
+  width: 100%;
+  h6 {
+    font-family: $dinotBold;
+    font-size: rem(12);
+    margin: 0;
+  }
+  p {
+    color: $color-table-header-gray;
+    font-family: $dinot;
+    font-size: rem(12)!important;
+    font-weight: normal;
+    margin-bottom: 0!important;
+  }
+  tr {
+    th {
+      vertical-align: top;
+    }
+    td,
+    th {
+      border-right: 1px dotted $color-table-border-gray;
+      min-height: rem(30);
+      padding: rem(8) rem(15);
+      text-align: center;
+      &:last-child {
+        border: none;
+      }
+    }
+    &:nth-child(2n+3) {
+      background: $color-table-background-gray;
+    }
+    td:first-child{
+      text-align: left;
+    }
+  }
+  tr th {
+    background: $color-tab-background-blue;
+    h6 {
+      color: $color-dark-blue;
+    }
+  }
+  tr td {
+    h6 {
+      color: $color-table-header-gray;
+    }
+  }
+}

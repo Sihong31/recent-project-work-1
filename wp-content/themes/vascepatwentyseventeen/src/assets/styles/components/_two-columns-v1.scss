@@ -1,0 +1,131 @@
+/***bubble blue and white columns ***/
+.two-columns-v1 {
+  height: auto;
+  @media all and (min-width: $mobileMin) {
+    // height: rem(650);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column-content-1,
+  .column-content-2 {
+    @media all and (min-width: $mobileMin) {
+      height: inherit;
+    }
+  }
+  .column-content-1 {
+    margin: rem(45) 0 rem(25);
+    @media all and (min-width: $mobileMin) {
+      background: url(/wp-content/themes/vascepatwentyseventeen/assets/images/heroes/side-main-bg.png) no-repeat;
+      margin: 0;
+      text-align: right;
+    }
+    @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+      padding: rem(30) rem(30) 0 rem(50);
+    }
+    @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+      padding: rem(45) rem(35) 0 rem(100);
+    }
+    @media all and (min-width: $largeMin) {
+      padding: rem(60) rem(40) 0 rem(200);
+    }
+    h2 {
+      color: $color-dark-blue;
+      font-family: $dinProCondBlack;
+      font-size: rem(36);
+      line-height: rem(36);
+      margin: 0;
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        font-size: rem(40);
+        line-height: rem(40);
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+        font-size: rem(45);
+        line-height: rem(45);
+      }
+      @media all and (min-width: $largeMin) {
+        font-size: rem(50);
+        line-height: rem(50);
+      }
+    }
+    .chemical-name {
+      color: $color-dark-blue;
+      font-family: $dinProCondBlack;
+      font-size: rem(18);
+      line-height: rem(18);
+      margin: 0;
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        font-size: rem(20);
+        line-height: rem(20);
+        padding-right: rem(35);
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+        font-size: rem(22.5);
+        line-height: rem(22.5);
+        padding-right: rem(35);
+      }
+      @media all and (min-width: $largeMin) {
+        font-size: rem(25);
+        line-height: rem(25);
+        padding-right: rem(40);
+      }
+    }
+  }
+  .column-content-2 {
+    background: $color-white;
+    margin-bottom: rem(45);
+    @media all and (min-width: $mobileMin) {
+      margin: 0;
+    }
+    @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+      padding: rem(30) rem(25) rem(30) rem(15);
+    }
+    @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+      padding: rem(45) rem(40) rem(45) rem(20);
+    }
+    @media all and (min-width: $largeMin) {
+      padding: rem(60) rem(55) rem(60) rem(30);
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: rem(45);
+      @media all and (min-width: $mobileMin) {
+        margin-bottom: rem(30);
+      }
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        margin-bottom: rem(20);
+      }
+      li {
+        font-family: $dinot;
+        font-size: rem(18);
+        padding-left: rem(20);
+        position: relative;
+        @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+          font-size: rem(14);
+        }
+        @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+          font-size: rem(16);
+        }
+        @media all and (min-width: $largeMin) {
+          font-size: rem(18);
+        }
+        &:before {
+          content: "•";
+          color: $color-column-yellow;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    .boxed-content {
+      border: rem(3) solid $color-column-yellow;
+      font-family: $dinPro;
+      font-size: rem(12);
+      padding: rem(20) rem(20);
+      text-indent: -0.5em; // hanging footnote
+    }
+  }
+  .reference-container, .footnote {
+    margin: rem(30) 0 0 0;
+  }
+}

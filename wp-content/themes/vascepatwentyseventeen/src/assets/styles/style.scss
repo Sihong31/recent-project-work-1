@@ -1,0 +1,191 @@
+@import 'fonts/fonts';
+@import 'fonts/icomoon';
+@import 'variables';
+@import 'normalize';
+@import 'props';
+@import 'navs/primary';
+@import 'navs/secondary';
+@import 'components/site-images.scss';
+@import 'components/callout-headlines.scss';
+@import 'components/radio-button.scss';
+@import 'components/button-1.scss';
+@import 'components/button-link-1.scss';
+@import 'components/hero';
+@import 'components/sub-hero';
+@import 'components/graph-container';
+@import 'components/bubbles';
+@import 'components/two-columns-v1';
+@import 'components/two-columns-v2';
+@import 'components/contact-us-columns';
+@import 'components/body-content-container';
+@import 'components/references';
+@import 'components/study-tab';
+@import 'components/arrow-container';
+@import 'components/vanilla-tab-container';
+@import 'components/data-tab-container';
+@import 'components/data-tab-container-2';
+@import 'components/data-table-1';
+@import 'components/sandwich';
+@import 'components/modal-home';
+@import 'components/mobile-scroll-container';
+@import 'components/graph-slider';
+@import 'components/standard-disclosure';
+@import 'components/graph-modal';
+@import 'components/home-carousel';
+@import 'components/web-graph';
+@import 'pages/vascepa-efficacy/anchor';
+@import 'pages/pure-epa/epa-vs-dha';
+@import 'pages/safety-dosing/safety-overview';
+@import 'pages/videos';
+@import 'pages/forms/register-access';
+@import 'pages/forms/request-more';
+@import 'pages/forms/request-more-confirmation';
+@import 'pages/forms/email-form';
+@import 'pages/contact-amarin';
+@import 'pages/site-map';
+@import 'isi/isi';
+@import 'footer/footer';
+
+html {
+  height: 100%;
+  font-size:$browser-context+px;
+  box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing:inherit;
+}
+
+body {
+  height: 100%;
+  font-size:$browser-context+px;
+  overflow-x:hidden;
+  width:100%;
+  margin:0!important;
+  padding: 0!important;
+}
+
+.main-container {
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal {
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.footnote,
+.graph-footnote {
+  font-family: $dinot;
+  font-size: rem(12);
+  max-width: rem(800);
+  margin: 0 auto;
+  p {
+    color: $color-black;
+    font-family: $dinot;
+    font-size: rem(12);
+    margin: 0;
+  }
+}
+
+.graph-footnote {
+  @media all and (min-width: $mobileMin) {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.highlight {
+  color: $color-nav-yellow;
+}
+
+p.hang{
+  text-indent: -.5em;
+}
+
+.top-indicator {
+  cursor: pointer;
+  color: $color-dark-blue;
+  font-family: $dinot;
+  font-size: rem(15);
+  position: relative;
+  text-align: right;
+  margin-right: rem(10);
+  @media all and (min-width: $mobileMin) {
+    font-size: rem(16);
+  }
+  &:after {
+    color: $color-dark-blue;
+    content: "\e90e";
+    font-family: icomoon !important;
+    font-size: rem(6);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: rem(-10);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.logo-reduce-it {
+  max-width: 100%;
+  margin-bottom: rem(25)!important;
+  @media all and (min-width: $mobileMin) {
+
+  }
+}
+
+.vascepa-coupon-card {
+  max-width: rem(380);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+sup.smaller{
+  font-size:50%;
+  top:-1em;
+}
+
+sup.v-text-align {
+  top: inherit;
+  font-size: 70%;
+  position: relative;
+  bottom: 0.3em;
+}

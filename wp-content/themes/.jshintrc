@@ -1,0 +1,16 @@
+{
+	"bitwise": true,
+	"browser": true,
+	"curly": true,
+	"devel": true, 
+	"eqeqeq": true,
+	"eqnull": true,
+	"funcscope": true,
+	"jquery": true,
+	"latedef": true,
+	"maxdepth": true,
+	"node": true,
+	"nonew": true,
+	"unused": true,
+	"undef": true
+}

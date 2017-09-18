@@ -1,0 +1,191 @@
+.isi-main-container {
+  background: $color-white;
+  border-top:1px solid #F0F0F0;
+  height: rem(150);
+  max-height: 100%;
+  // overflow-y: auto;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  @media all and (min-width: $mobileMin) {
+    height: rem(166);
+    overflow: hidden;
+  }
+  .mobile-toggler {
+    width: rem(45);
+    height: rem(45);
+    background: $color-white;
+    border-radius: 50%;
+    left: 50%;
+    margin: rem(-22.5) auto 0 auto;
+    position: fixed;
+    transform: translateX(-50%);
+    &.collapsed:after,
+    &.expanded:after {
+      content: "";
+      display: block;
+      width: rem(15);
+      height: rem(15);
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%,-25%);
+    }
+    &.collapsed:after {
+      background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/button-expand-mobile.png') no-repeat;
+      background-size: 100%;
+    }
+    &.expanded:after {
+      background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/button-collapse-mobile.png') no-repeat;
+      background-size: 100%;
+    }
+  }
+  .isi-tab-container {
+    background: $color-white;
+    height: rem(75);
+    padding: rem(11) 0;
+    position: relative;
+    .isi-toggler {
+      margin-top: rem(-7);
+      span {
+        font-family: $dinotBold;
+        display: block;
+        height: rem(36);
+        padding: rem(5) 0 rem(5) rem(45);
+      }
+      &.collapsed span:before {
+        background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/button-expand.png') no-repeat;
+        content: "";
+        height: rem(36);
+        width: rem(36);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &.expanded span:before {
+        background: url('/wp-content/themes/vascepatwentyseventeen/assets/images/button-collapse.png') no-repeat;
+        content: "";
+        height: rem(36);
+        width: rem(36);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.isi-static-main-container {
+  border-top:1px solid #f0f0f0;
+  .isi-tab-container {
+    background: $color-white;
+    height: rem(75);
+    padding: rem(11) 0;
+    position: relative;
+    @media all and (min-width: $largeMin) {
+      padding: rem(10) 0;
+    }
+  }
+}
+
+//**shared between slider and static isi
+.isi-main-container,
+.isi-static-main-container {
+  padding: 0 rem(15);
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    padding: 0 rem(45);
+  }
+  @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+    padding: 0 rem(80);
+  }
+  @media all and (min-width: $largeMin) {
+    padding: 0 rem(140);
+  }
+  [class*="col-"] {
+    padding: 0;
+  }
+  .headline-indication {
+    margin-top: rem(20);
+  }
+  .isi-tab-container {
+    color: $color-dark-blue;
+    font-family: $dinotBold;
+    font-size: rem(15);
+    @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+      font-size: rem(15);
+    }
+    @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+      font-size: rem(16);
+    }
+    @media all and (min-width: $largeMin) {
+      font-size: rem(20);
+    }
+    &:after {
+      background: linear-gradient(to bottom, $color-footer-light-blue, $color-white);
+      content: "";
+      display: block;
+      height: rem(24);
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+      margin-left: rem(-15);
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        margin-left: rem(-45);
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+        margin-left: rem(-80);
+      }
+      @media all and (min-width: $largeMin) {
+        margin-left: rem(-140);
+      }
+    }
+  }
+  .isi-copy-container {
+    @media all and (min-width: $mobileMin) {
+      margin-top: rem(-5);
+    }
+    h3,
+    p,
+    ul li {
+      font-size: rem(14);
+      @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+        font-size: rem(14);
+      }
+      @media all and (min-width: $mediumMin) and (max-width: $largeMax) {
+        font-size: rem(16);
+      }
+      @media all and (min-width: $largeMin) {
+        font-size: rem(18);
+      }
+    }
+    h3 {
+      font-family: $dinProBold;
+      font-weight: normal;
+    }
+    p,
+    ul li,
+    a {
+      font-family: $dinPro;
+    }
+    h3,
+    a {
+      color: $color-dark-blue;
+      font-family: $dinProBold;
+    }
+    ul > li {
+      color: $color-nav-yellow;
+    }
+    p,
+    ul > li > span{
+      color: $color-body-gray;
+    }
+
+    ul {
+      margin: 0 0 rem(20) 0;
+      padding-left: rem(20);
+    }
+
+  }
+}

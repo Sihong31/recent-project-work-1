@@ -1,0 +1,45 @@
+.graph-modal-container {
+  cursor: pointer;
+  position: relative;
+  .img-container-1,
+  .img-container-2,
+  .img-container-3,
+  .img-container-4,
+  .reduce-it-graph-container,
+  .web-graph-1 {
+    position: relative;
+    &:after {
+      background: url("/wp-content/themes/vascepatwentyseventeen/assets/images/graphs/modal-expander.svg") no-repeat;
+      content: "";
+      height: rem(20);
+      width: rem(20);
+      position: absolute;
+      right: rem(2);
+      top: rem(2);
+      @media all and (min-width: $mobileMin) {
+        height: rem(36);
+        width: rem(36);
+      }
+    }
+  }
+}
+
+.graph-modal {
+  .modal-dialog {
+    width: 100%;
+    max-width: rem(800);
+    .modal-header {
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .img-container-1,
+  .img-container-2,
+  .img-container-3,
+  .img-container-4,
+  .reduce-it-graph-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}

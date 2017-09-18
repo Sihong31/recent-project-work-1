@@ -1,0 +1,127 @@
+.dinot-bold {
+  font-family: $dinotBold!important;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+.float-sm-right {
+  @media all and (min-width: $mobileMin) {
+    float: right;
+  }
+}
+.fw-normal {
+  font-weight: normal;
+}
+
+.width-auto {
+  width: auto!important;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-b-0 {
+  margin-bottom: 0!important;
+}
+
+.m-b-10 {
+  margin-bottom: rem(10)!important;
+}
+
+.m-b-15 {
+  margin-bottom: rem(15)!important;
+}
+
+.m-b-20 {
+  margin-bottom: rem(20);
+}
+
+.m-b-25 {
+  margin-bottom: rem(25);
+}
+
+.m-b-30 {
+  margin-bottom: rem(30)!important;
+}
+
+.m-b-50 {
+  margin-bottom: rem(50);
+}
+
+.m-t-0 {
+  margin-top: 0!important;
+}
+
+.m-t-10 {
+  margin-top: rem(10)!important;
+}
+
+.m-t-15 {
+  margin-top: rem(15)!important;
+}
+
+.m-t-30 {
+  margin-top: rem(30)!important;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mb-min-p-r-0 {
+  @media all and (min-width: $mobileMin) {
+    padding-right: 0;
+  }
+}
+.mb-min-p-r-15 {
+  @media all and (min-width: $mobileMin) {
+    padding-right: rem(15)!important;
+  }
+}
+.mb-min-p-l-0 {
+  @media all and (min-width: $mobileMin) {
+    padding-left: 0;
+  }
+}
+.mb-min-p-l-15 {
+  @media all and (min-width: $mobileMin) {
+    padding-left: rem(15)!important;
+  }
+}
+
+.mb-min-p-r-30 {
+  @media all and (min-width: $mobileMin) {
+    padding-right: rem(30)!important;
+  }
+}
+
+.mb-min-p-l-30 {
+  @media all and (min-width: $mobileMin) {
+    padding-left: rem(30)!important;
+  }
+}
+
+.mb-min-p-l-20 {
+  @media all and (min-width: $mobileMin) {
+    padding-left: rem(20);
+  }
+}
+
+.mb-min-m-t-0 {
+  @media all and (min-width: $mobileMin) {
+    margin-top: 0!important;
+  }
+}
+
+.mb-min-m-b-30 {
+  @media all and (min-width: $mobileMin) {
+    margin-bottom: rem(30)!important;
+  }
+}
+
+.fs-12 {
+  font-size: rem(12)!important;
+}

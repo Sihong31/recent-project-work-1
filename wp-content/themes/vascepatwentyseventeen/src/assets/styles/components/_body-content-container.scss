@@ -1,0 +1,97 @@
+.body-content-container,
+.standard-disclosure-container,
+.graph-container,
+.graph-modal {
+  h2 {
+    color: $color-dark-blue;
+    margin-bottom: rem(15);
+    font-family: $dinProCondBlack;
+    font-size: rem(32.5);
+    @media all and (min-width: $mobileMin) {
+      font-size: rem(36);
+      margin-bottom: rem(15);
+    }
+  }
+  h3 {
+    color: $color-dark-blue;
+    margin-bottom: rem(20);
+    font-family: $dinot;
+    font-size: rem(24);
+    font-weight: normal;
+    text-transform: none;
+    @media all and (min-width: $mobileMin) {
+      font-size: rem(24);
+      margin-bottom: rem(15);
+    }
+    a {
+      color: $color-dark-blue;
+      font-family: $dinotMedium;
+      text-decoration: underline;
+    }
+  }
+  ul,
+  .sub-list {
+    margin-bottom: rem(20);
+    padding-left: 0;
+    list-style: none;
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(30);
+    }
+    li {
+      color: $color-body-gray;
+      font-family: $dinot;
+      font-size: rem(18);
+      padding-left: rem(20);
+      position: relative;
+      margin-bottom:0.4em;
+      @media all and (min-width: $mobileMin) {
+        font-size: rem(18);
+      }
+      &:before {
+        content: "•";
+        color: $color-column-yellow;
+        font-size: rem(25);
+        line-height: rem(25);
+        position: absolute;
+        left: 0;
+      }
+      a {
+        color: $color-dark-blue;
+        font-family: $dinot;
+        text-decoration: underline;
+      }
+    }
+  }
+  .sub-list {
+    li:before {
+      color: $color-body-gray;
+      content: "-";
+    }
+  }
+  p {
+    font-family: $dinot;
+    color: $color-body-gray;
+    font-size: rem(18);
+      margin-bottom: rem(20);
+    @media all and (min-width: $mobileMin) {
+      margin-bottom: rem(30);
+    }
+  }
+}
+
+.body-content-container {
+  overflow: hidden;
+  padding: rem(65) rem(15) 0 rem(15);
+  @media all and (min-width: $mobileMin) and (max-width: $mediumMax) {
+    padding: 0 rem(40);
+  }
+  @media all and (min-width: $mediumMin) {
+    padding: 0 rem(170) 0 rem(170);
+  }
+  @media all and (min-width: $largeMin) {
+    padding: 0 rem(180) 0 rem(360);
+  }
+  [class*="col-"] {
+    padding: 0;
+  }
+}
